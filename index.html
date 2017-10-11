@@ -11,7 +11,7 @@ body {background-image:url(1.jpg);}</style>
 setInterval(test,1000); 
 var array=new Array(); 
 var index=0; 
-var array= new Array("0.jpg"width="200" height="200","2.jpg"width="200" height="200","3.jpg"width="200" height="200","4.jpg"width="200" height="200","5.jpg"width="200" height="200","6.jpg"width="200" height="200","7.jpg"width="200" height="200"); 
+var array= new Array("0.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg"); 
 function test() 
 { var myimg=document.getElementById("imgs"); 
 if(index==array.length-1) 
@@ -23,7 +23,7 @@ myimg.src=array[index];
 <body>
 <h1><var>HangZhou!</var></h1>
 <h5><b>Welcome to HangZhou.</b></h5>
-<img id="imgs" src="0.jpg" width="200" height="200" />
+<img id="imgs" src="0.jpg" />
 <audio autoplay="autoplay" >
 <source src="鹿晗 - 我们的明天.mp3" type="audio/mp3" />
 <source src="鹿晗 - 我们的明天.ogg" type="audio/ogg" />
