@@ -16,7 +16,14 @@ body {background-image:url(1.jpg);background-repeat:repeat}</style>
 </td></tr>
 <tr><td width=50% align=right>
 <br><br><br><br><br><br><br>
-<h3>West Lake</h3>
+<canvas id="myCanvas">your browser does not support the canvas tag </canvas>
+<script type="text/javascript">
+var canvas=document.getElementById('myCanvas');
+var ctx=canvas.getContext('2d');
+ctx.fillStyle='#000000';
+ctx.fillRect(0,0,150,50);
+</script>
+<a target="_blank" style="color:#FFFAF0; text-decoration:none" ><h3>West Lake</h3><a>
 <br><br><br><br><br><br><br><br>
 </td><td width=50% align=center>
 <img id="imgs" src="3.jpg" width="600" height="500" />
