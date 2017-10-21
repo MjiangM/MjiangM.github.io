@@ -3,20 +3,30 @@
 <title>WestLake</title>
 <style type="text/css">
 h1 {font-family:Georgia;}
+*{ margin:0; padding:0; list-style:none;}    
+#box{ width:840px; border:1px solid #000; height:210px; margin:30px auto; position:relative; overflow:hidden;}    
+#box ul{ position:absolute; left:0; top:0;}    
+#box ul li{ width:200px; height:200px; float:left; padding:5px;}  
 </style>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-<script language="javascript"> 
-setInterval(test,1000); 
-var array=new Array(); 
-var index=0; 
-var array= new Array("week3-4/31.jpg","week3-4/32.jpg","week3-4/33.jpg","week3-4/34.jpg","week3-4/35.jpg","week3-4/36.jpg","week3-4/37.jpg","week3-4/38.jpg","week3-4/39.jpg","week3-4/41.jpg"); 
-function test() 
-{ var myimg=document.getElementById("imgs"); 
-if(index==array.length-1) 
-{ index=0; }else{ index++; } 
-myimg.src=array[index]; 
-} 
-</script> 
+<script>    
+window.onload=function(){    
+    var oBox=document.getElementById('box');    
+    var oUl=oBox.children[0];    
+    var aLi=oUl.children;    
+         
+    //复制一份内容 ，制作出无缝的效果   
+    oUl.innerHTML+=oUl.innerHTML;    
+    oUl.style.width=aLi.length*aLi[0].offsetWidth+'px';    
+         
+    setInterval(function(){   //开定时器，这样就可以自己切换，无需人工干预。 
+        var l=oUl.offsetLeft-10;  //图片切换，就是移动距离
+        if(l<=-oUl.offsetWidth/2){    
+            l=0;    
+        }    
+        oUl.style.left=l+'px';    
+    },30);    
+};    
+</script>    
 </head>
 <body>
 <table border=2 bordercolor=red width=100% align=center>
@@ -48,7 +58,19 @@ myimg.src=array[index];
 </td></tr>
 <tr><td width=100% align=center>
 <p>西湖十景</p>
-<img id="imgs" src="week3-4/31.jpg" />
+<div id="box">    
+    <ul>    
+     <li><img src="week3-4/31.jpg" width="200"></li>    
+       <li><img src="week3-4/32.jpg" width="200"></li>    
+       <li><img src="week3-4/33.jpg" width="200"></li>
+      <li><img src="week3-4/34.jpg" width="200"></li>
+      <li><img src="week3-4/35.jpg" width="200"></li>
+      <li><img src="week3-4/36.jpg" width="200"></li>
+      <li><img src="week3-4/37.jpg" width="200"></li>
+      <li><img src="week3-4/38.jpg" width="200"></li>
+      <li><img src="week3-4/39.jpg" width="200"></li>
+      <li><img src="week3-4/41.jpg" width="200"></li>
+   </ul>    
 </td></tr>
 <tr><td width=50% align=right>
 <br><br><br><br><br><br><br>
