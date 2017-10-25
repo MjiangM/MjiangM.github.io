@@ -12,14 +12,12 @@ h1 {font-family:Georgia;}
 window.onload=function(){    
     var oBox=document.getElementById('box');    
     var oUl=oBox.children[0];    
-    var aLi=oUl.children;    
-         
-    //复制一份内容 ，制作出无缝的效果   
+    var aLi=oUl.children;       
     oUl.innerHTML+=oUl.innerHTML;    
     oUl.style.width=aLi.length*aLi[0].offsetWidth+'px';    
          
-    setInterval(function(){   //开定时器，这样就可以自己切换，无需人工干预。 
-        var l=oUl.offsetLeft-10;  //图片切换，就是移动距离
+    setInterval(function(){    
+        var l=oUl.offsetLeft-10;  
         if(l<=-oUl.offsetWidth/2){    
             l=0;    
         }    
@@ -29,7 +27,7 @@ window.onload=function(){
 </script>    
 </head>
 <body>
-<table border=2 bordercolor=red width=100% align=center>
+<table border= bordercolor=red width=100% align=center>
 <tr>
 <td align=left colspan=2 style="background: url(week3-4/87.jpg);">
 <br><br><br>
@@ -71,13 +69,6 @@ window.onload=function(){
       <li><img src="week3-4/39.jpg" width="600" height="500"></li>
       <li><img src="week3-4/41.jpg" width="600" height="500"></li>
    </ul>    
-</td></tr>
-<tr><td width=50% align=right>
-<br><br><br><br><br><br><br>
-<h3>delicious dishes</h3>
-<br><br><br><br><br><br><br><br>
-</td><td width=50% align=center>
-<img id="imgs" src="9.png" width="600" height="500" />
 </td></tr>
 </table>
 </body>
