@@ -1,0 +1,38 @@
+h1 {font-family:Georgia;font-size:60px;}
+h2,h3{color:#FFFFFF;padding:2;}
+p{color:#FFFFFF;}
+body {background-image:url(timg.jpg);background-repeat:repeat}
+#Header {
+margin:0px 0px 10px 0px;
+padding:17px 0px 0px 350px;
+}
+#Content {
+margin:0px 50px 50px 200px;
+padding:10px;
+z-index:3;
+}
+#Menu {
+position:absolute;
+top:200px;
+left:20px;
+width:150px;
+padding:10px;
+
+}
+#footer {
+    color:white;
+    clear:both;
+    text-align:right;
+		 
+}
+a:link,a:visited
+{
+display:block;
+width:120px;
+font-weight:bold;
+color:#FFFFFF;
+text-align:center;
+padding:4px;
+text-decoration:none;
+text-transform:uppercase;
+}

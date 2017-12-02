@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>无标题文档</title>
+<style>
+.navigation ul
+{margin:1px;
+padding:1px;
+list-style-type:none;
+}
+.navigation li
+{
+margin: 0 0 4px 0;
+}
+.navigation a
+{
+display: block;
+color:black;
+background-color:#CC6600;
+width:120px;
+padding:4px 12px;
+text-decoration:none;
+border:1px solid black;
+}
+.navigation a:hover
+{
+background-color:Bisque;
+color:#000000;
+}
+#Header {
+margin:50px 0px 10px 0px;
+padding:17px 0px 0px 20px;
+border:1px dashed #999;
+background-color:#eee;
+}
+#Content {
+margin:0px 50px 50px 200px;
+padding:10px;
+border:1px dashed #999;
+background-color: #eee;
+}
+#Menu {
+position:absolute;
+top:100px;
+left:20px;
+width:150px;
+padding:10px;
+background-color:#eee;
+border:1px dashed #999;
+}
+</style>
+<script type="text/javascript">
+function writeText(txt)
+{
+document.getElementById("desc").innerHTML=txt
+}
+</script>
+</head>
+<body>
+<div class="navigation" id="Menu">
+<ul>
+<li><a href="#">Home</a></li>
+
+<a href="#" border="0" usemap="#planetmap" alt="Planets" />
+
+<map name="planetmap" id="planetmap">
+
+<area 
+onMouseOver="writeText('直到 20 世纪 60 年代，金星一直被认为是地球的孪生姐妹，因为金星是离我们最近的行星，同时还由于两者拥有很多共同的特征。')"
+href ="/example/html/venus.html" target ="_blank" alt="Venus" />
+
+</map>
+</a>
+<p id="desc"></p>
+</div>
+</body>
+</html>

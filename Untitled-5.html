@@ -1,0 +1,40 @@
+<html>
+
+<head>
+<link rel="icon" href="favicon.ico">
+<link rel="shortcut icon" href="/favicon.ico" > 
+<title>CSS grammar</title>
+<link rel="stylesheet" type="text/css" href="3.css" />
+</head>
+<body>
+<div id="Header">
+<h1>Advanced grammar</h1>
+</div>
+<div id="Menu">
+<a href="Untitled-2.html"><h3>Basic grammar</h3></a>
+<h4>Advanced grammar</h4>
+<a href="Untitled-6.html"><h4>Descendent selector</h4></a>
+<a href="Untitled-7.html"><h4>Id selector</h4></a>
+<a href="Untitled-8.html"><h4>Class selector</h4></a>
+</div>
+<div id="Content">
+
+<h2>Selector grouping:</h2>
+<h3>You can group the selectors so that the selectors that are grouped can share the same declaration. A comma is used to separate the selectors that need to be grouped.</h3>
+<h2>Inheritance and its problems:</h2>
+<h3>According to CSS, subelements inherit attributes from the parent element. But it doesn't always work in this way. Look at the following rule:</h3><br>
+<img src="ting3.PNG">
+<h3>According to the above rule, the body element of the site will use the Verdana font (if the font is present in the visitor's system).</h3>
+<h3>Through CSS inheritance, child elements will inherit the attributes of the most advanced elements (in this case, body). These sub elements such as P, TD, UL, ol, UL, Li, DL, DT, and DD. No additional rules are needed. All the subelements of the body should display the Verdana font, and the subelements of the subelements are the same. And that's true in most modern browsers.</h3>
+<h3>But in the bloody age of that browser war, this would not happen, and the support of the standard was not the priority of the business. For example, Netscape 4 does not support inheritance, which not only ignores inheritance, but also ignores the rules that are applied to the body element. IE/Windows until IE6 has related problems, and the font style in the table will be ignored.</h3>
+
+</div>
+<div id="footer">
+<audio controls="controls" height="100" width="100">
+<source src="陈鸿宇 - 理想三旬.mp3" type="audio/mp3" />
+<source src="陈鸿宇 - 理想三旬.ogg" type="audio/ogg" />
+<embed height="100" width="100" src="week1-2/陈鸿宇 - 理想三旬.mp3" />
+</audio>
+</div>
+</body>
+</html>
